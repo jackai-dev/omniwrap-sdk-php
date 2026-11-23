@@ -1,0 +1,20 @@
+{
+  "autoload": {
+    "psr-4": {
+      "OmniWrap\\\\": "src/"
+    }
+  },
+  "description": "OmniWrap generated PHP SDK for OmniWrap",
+  "extra": {
+    "omniwrap": {
+      "contract_sha256": "2289bcb0d661bdea6dd47c7967f37aace7d3a152e18e7d2f64c08514fb73e795",
+      "generator_version": "2.0.0"
+    }
+  },
+  "name": "omniwrap/omniwrap",
+  "require": {
+    "php": "^8.1"
+  },
+  "type": "library",
+  "version": "1.0.0"
+}

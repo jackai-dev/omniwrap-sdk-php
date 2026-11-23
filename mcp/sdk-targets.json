@@ -1,0 +1,132 @@
+{
+  "contract_fingerprint": "2289bcb0d661bdea6dd47c7967f37aace7d3a152e18e7d2f64c08514fb73e795",
+  "sdk_targets_version": "1.1.0",
+  "targets": [
+    {
+      "identity": {
+        "coordinates": "omniwrap/omniwrap@1.0.0",
+        "ecosystem": "Packagist",
+        "entry": "OmniWrap\\Client",
+        "import": "use OmniWrap\\Client;"
+      },
+      "operations": {
+        "cancelPreview": {
+          "member": "cancelPreview",
+          "method": "POST",
+          "path": "/v1/projects/{projectId}/previews/{previewId}/cancel",
+          "resource": "previews",
+          "signature": "public function cancelPreview(string $projectId, string $previewId, ?array $body = null): array"
+        },
+        "createConfigurationRevision": {
+          "member": "createConfigurationRevision",
+          "method": "POST",
+          "path": "/v1/projects/{projectId}/configuration-revisions",
+          "resource": "configurations",
+          "signature": "public function createConfigurationRevision(string $projectId, ?array $body = null): array"
+        },
+        "createPreview": {
+          "member": "createPreview",
+          "method": "POST",
+          "path": "/v1/projects/{projectId}/previews",
+          "resource": "previews",
+          "signature": "public function createPreview(string $projectId, ?array $body = null): array"
+        },
+        "createSourceRevision": {
+          "member": "createSourceRevision",
+          "method": "POST",
+          "path": "/v1/projects/{projectId}/source-revisions",
+          "resource": "sources",
+          "signature": "public function createSourceRevision(string $projectId, ?array $body = null, array $query = []): array"
+        },
+        "getArtifact": {
+          "member": "getArtifact",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/artifacts/{artifactId}",
+          "resource": "artifacts",
+          "signature": "public function getArtifact(string $projectId, string $artifactId): array"
+        },
+        "getConfigurationRevision": {
+          "member": "getConfigurationRevision",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/configuration-revisions/{revisionId}",
+          "resource": "configurations",
+          "signature": "public function getConfigurationRevision(string $projectId, string $revisionId): array"
+        },
+        "getEvidence": {
+          "member": "getEvidence",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/evidence/{evidenceId}",
+          "resource": "evidence",
+          "signature": "public function getEvidence(string $projectId, string $evidenceId): array"
+        },
+        "getPreview": {
+          "member": "getPreview",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/previews/{previewId}",
+          "resource": "previews",
+          "signature": "public function getPreview(string $projectId, string $previewId): array"
+        },
+        "getPreviewEvents": {
+          "member": "getPreviewEvents",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/previews/{previewId}/events",
+          "resource": "previews",
+          "signature": "public function getPreviewEvents(string $projectId, string $previewId, array $query = []): array"
+        },
+        "getPreviewLogs": {
+          "member": "getPreviewLogs",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/previews/{previewId}/logs",
+          "resource": "previews",
+          "signature": "public function getPreviewLogs(string $projectId, string $previewId, array $query = []): array"
+        },
+        "getProject": {
+          "member": "getProject",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}",
+          "resource": "projects",
+          "signature": "public function getProject(string $projectId): array"
+        },
+        "getSourceRevision": {
+          "member": "getSourceRevision",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/source-revisions/{revisionId}",
+          "resource": "sources",
+          "signature": "public function getSourceRevision(string $projectId, string $revisionId): array"
+        },
+        "getUserContext": {
+          "member": "getUserContext",
+          "method": "GET",
+          "path": "/v1/me/context",
+          "resource": "context",
+          "signature": "public function getUserContext(): array"
+        },
+        "listPreviewEvidence": {
+          "member": "listPreviewEvidence",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/previews/{previewId}/evidence",
+          "resource": "evidence",
+          "signature": "public function listPreviewEvidence(string $projectId, string $previewId, array $query = []): array"
+        },
+        "listPreviews": {
+          "member": "listPreviews",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/previews",
+          "resource": "previews",
+          "signature": "public function listPreviews(string $projectId, array $query = []): array"
+        },
+        "listProjects": {
+          "member": "listProjects",
+          "method": "GET",
+          "path": "/v1/projects",
+          "resource": "projects",
+          "signature": "public function listProjects(array $query = []): array"
+        }
+      },
+      "package_directory": "../omniwrap-omniwrap-php-sdk",
+      "package_manifest": "composer.json",
+      "reference": "api.md",
+      "renderer": "php"
+    }
+  ]
+}
